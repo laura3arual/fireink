@@ -25,7 +25,6 @@ import {FIREBASE_CONFIG} from "./app.firebase.config";
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage,
     ListPage
   ],
   providers: [
