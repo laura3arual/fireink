@@ -10,11 +10,15 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import {AngularFireModule} from "angularfire2";
 import {FIREBASE_CONFIG} from "./app.firebase.config";
+import {LoginPage} from "../pages/login/login";
+import {RegisterPage} from "../pages/register/register";
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
+    LoginPage,
+    RegisterPage,
     ListPage
   ],
   imports: [
@@ -25,6 +29,8 @@ import {FIREBASE_CONFIG} from "./app.firebase.config";
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
+    LoginPage,
+    RegisterPage,
     ListPage
   ],
   providers: [
