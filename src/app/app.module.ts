@@ -12,6 +12,7 @@ import {AngularFireModule} from "angularfire2";
 import {FIREBASE_CONFIG} from "./app.firebase.config";
 import {LoginPage} from "../pages/login/login";
 import {RegisterPage} from "../pages/register/register";
+import {Facebook} from "@ionic-native/facebook";
 
 @NgModule({
   declarations: [
@@ -36,6 +37,7 @@ import {RegisterPage} from "../pages/register/register";
   providers: [
     StatusBar,
     SplashScreen,
+    Facebook,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
