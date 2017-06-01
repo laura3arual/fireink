@@ -1,18 +1,21 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { ErrorHandler, NgModule } from '@angular/core';
-import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
+import {BrowserModule} from "@angular/platform-browser";
+import {ErrorHandler, NgModule} from "@angular/core";
+import {IonicApp, IonicErrorHandler, IonicModule} from "ionic-angular";
 
-import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
+import {MyApp} from "./app.component";
+import {HomePage} from "../pages/home/home";
+import {ListPage} from "../pages/list/list";
 
-import { StatusBar } from '@ionic-native/status-bar';
-import { SplashScreen } from '@ionic-native/splash-screen';
-import {AngularFireModule} from "angularfire2";
+import {StatusBar} from "@ionic-native/status-bar";
+import {SplashScreen} from "@ionic-native/splash-screen";
 import {FIREBASE_CONFIG} from "./app.firebase.config";
 import {LoginPage} from "../pages/login/login";
 import {RegisterPage} from "../pages/register/register";
 import {Facebook} from "@ionic-native/facebook";
+import firebase from "firebase";
+
+
+firebase.initializeApp(FIREBASE_CONFIG);
 
 @NgModule({
   declarations: [
@@ -24,8 +27,7 @@ import {Facebook} from "@ionic-native/facebook";
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp),
-    AngularFireModule.initializeApp(FIREBASE_CONFIG)
+    IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
