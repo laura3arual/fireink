@@ -1,7 +1,7 @@
 .fk-login {
     width: 100%;
     height: 100%;
-    background: url('../../assets/img/bg_login.jpg');
+    background: url('../assets/img/bg_login.jpg');
     background-size: cover;
     display: flex;
     align-items: center;
@@ -40,11 +40,11 @@
                 i{
                     margin-right: .5em;
                     &:before {
-                    font-size: 32px;  
+                    font-size: 32px;
                     }
                 }
-                
-            } 
+
+            }
             &__face {
                 border-right: 1px solid #FFF;
             }
