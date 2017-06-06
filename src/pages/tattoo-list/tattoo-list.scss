@@ -1,27 +1,50 @@
-page-tattoo-list {
-  .card-background-page {
-
-    ion-card {
+.fk-list {
+  padding: .5em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  &__item {
+      width: 50%;
       position: relative;
-      text-align: center;
-    }
-
-    .card-title {
-      position: absolute;
-      top: 36%;
-      font-size: 2.0em;
+      padding: 0 .25em;
+      height: 180px;
+      overflow: hidden;
+      margin: .5em 0;
+    img {
       width: 100%;
-      font-weight: bold;
-      color: #fff;
+      border: 0;
+      object-fit: cover;
+      height: 100%;
     }
-
-    .card-subtitle {
-      font-size: 1.0em;
+    &__foot {
       position: absolute;
-      top: 52%;
+      bottom: 0;
+      left: 0;
       width: 100%;
-      color: #fff;
+      background: rgba(255,255,255,.7);
+      padding: .5em 1em;
+      display: flex;
+      align-items: center;
+      &__likes {
+        font-size: 16px;
+        font-weight: bold;
+        color: #515050;
+        margin-left: 0.3em;
+      }
+      &__avatar {
+        width: 48px;
+        height: 48px;
+        position: absolute;
+        overflow: hidden;
+        border-radius: 50%;
+        right: 12px;
+        top: -24px;
+        border: 2px solid #FFF;
+        background-size: cover;
+      }
     }
-
+    &--liked {
+      color: #C43F3F;
+    }
   }
 }
