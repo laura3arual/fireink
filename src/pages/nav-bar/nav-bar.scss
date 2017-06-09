@@ -1,0 +1,19 @@
+.fk-nav-bar {
+    background: #C03838;
+    padding: .5em 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__logo {
+        width: 24px;
+        text-align: left;
+    }
+    &__opts {
+        width: 50%;
+        text-align: right;
+        i {
+            color: #FFF;
+            margin-left: 1em;
+        }
+    }
+}
