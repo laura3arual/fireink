@@ -15,6 +15,11 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 
+ion-app.ios {
+    font-family: "Roboto";
+    font-weight: 300;
+}
+
 #ion-diagnostics-toast,
 .ios .ion-page.show-page ~ .nav-decor {
     background: #FFF;

@@ -1,13 +1,45 @@
 
 
 <ion-menu [content]="content" side="right" [persistent]="true">
-  <ion-header>
-    <ion-toolbar>
-      <ion-title>Menu</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  
+  <div class="fk-menu">
+    <div class="fk-menu__profile">
+        <div class="fk-menu__profile__photo">
+            <img src="https://www.trickscity.com/wp-content/uploads/2017/03/stylish-girl-dp.jpg" alt="">
+        </div>
+        <h1 class="fk-menu__profile__name">
+          Andrea Morales
+        </h1>
+        <span class="fk-menu__profile__edit">
+          Editar Perfil
+        </span>
+    </div>
+    <ul class="fk-menu__options">
+      <li class="fk-menu__options__opt">
+         <i class="flaticon-sailor-skull"></i>
+         <span>Mis Tatuajes</span>
+      </li>
+      <li class="fk-menu__options__opt">
+         <i class="flaticon-markers"></i>
+         <span>Mis Diseños</span>
+      </li>
+      <li class="fk-menu__options__opt">
+         <i class="flaticon-heart"></i>
+         <span>Mis Favoritos</span>
+      </li>
+      <li class="fk-menu__options__opt">
+         <i class="flaticon-speech-bubble"></i>
+         <span>Mensajes</span>
+      </li>
+      <li class="fk-menu__options__opt">
+         <i class="flaticon-logout"></i>
+         <span>Cerrar Sesión</span>
+      </li>
+    </ul>
+  </div>
 
-  <ion-content>
+
+  <!--ion-content>
     <ion-list>
       <button menuClose ion-item (click)="openFavorites()">
         Mis Favoritos
@@ -19,7 +51,7 @@
         Cerrar Sesión
       </button>
     </ion-list>
-  </ion-content>
+  </ion-content-->
 
 </ion-menu>
 

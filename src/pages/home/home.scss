@@ -1,3 +1,50 @@
-page-home {
-
+.fk-menu {
+    background: #3E424E;
+    width: 100%;
+    height: 100%;
+    &__profile {
+        padding: 50px;
+        text-align: center;
+        &__photo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 1px solid #FFFFFF;
+            overflow: hidden;
+            margin: 1.5em auto;
+            img {
+                width: 100%;
+            }
+        }
+        &__name {
+            font-weight: 500;
+            color: #EEECED;
+            font-size: 18px;
+            margin: 0;
+            padding: 0;
+        }
+        &__edit {
+            color: #EEECED;
+            font-size: 14px;
+            font-weight: 400;
+        }
+    }
+    &__options {
+        margin: 0;
+        padding: 0;
+        &__opt {
+            list-style: none;
+            color: #EEECED;
+            display: flex;
+            align-items: center;
+            i {
+                &:before {
+                    font-size: 28px;
+                }
+            }
+            span {
+                padding: 0 1.5em;
+            }
+        }
+    }
 }
