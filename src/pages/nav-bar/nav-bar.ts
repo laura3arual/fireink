@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {TattooListPage} from "../tattoo-list/tattoo-list";
 
 /**
  * Generated class for the NavBarPage page.
@@ -19,6 +20,10 @@ export class NavBarPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad NavBarPage');
+  }
+
+  public openListTattoo() {
+    this.navCtrl.push(TattooListPage);
   }
 
 }
