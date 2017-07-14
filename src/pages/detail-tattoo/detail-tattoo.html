@@ -7,9 +7,46 @@
     <div class="fk-detail__artist">
         <div class="fk-detail__artist__photo"
           style="background-image: url('http://inkonsky.tattoo/photo/visor/2017/01/19/sanpedrosanchez-5880f7d6594a4-tattoo.jpg')"></div>
-        <h1 class="fk-detail__artist__name">
+        <h1 class="fk-detail__artist__name" (click)="openDetail()">
             Camilo Tavera
             <small>Bogotá, Colombia</small>
         </h1>
+        <div class="fk-detail__artist__likes">
+            <i class="flaticon-heart"></i>
+            <span class="fk-detail__artist__likes__num">46</span>
+        </div>
     </div>
+   
+    <div class="fk-detail__comments">
+        <i class="flaticon-speech-bubble-1"></i>
+        <span class="fk-detail__comments__txt">5 Comentarios</span>
+    </div>
+
+
+</div>
+
+<div class="fk-list">
+
+    <h2 class="fk-detail__title">Otros del mismo estilo</h2>
+  
+  <div class="fk-list__item">
+    <img (click)="openDetail()" src="http://inkonsky.tattoo/photo/visor/2017/05/15/Kel_tait-5918d87f1b7c1-tattoo.jpg" alt="">
+    <div class="fk-list__item__foot">
+      <i class="flaticon-heart"></i>
+      <span class="fk-list__item__foot__likes">125</span>
+      <div class="fk-list__item__foot__avatar"
+          style="background-image: url('http://inkonsky.tattoo/photo/visor/2017/01/19/sanpedrosanchez-5880f7d6594a4-tattoo.jpg')"></div>
+    </div>
+  </div>
+
+  <div class="fk-list__item">
+    <img (click)="openDetail()" src="http://inkonsky.tattoo/photo/visor/2017/05/25/sergioromero-5926929a70d72-tattoo.jpg" alt="">
+    <div class="fk-list__item__foot">
+      <i class="flaticon-heart-1 fk-list__item--liked"></i>
+      <span class="fk-list__item__foot__likes">1k</span>
+      <div class="fk-list__item__foot__avatar"
+          style="background-image: url('http://inkonsky.tattoo/photo/visor/2016/07/05/Pia_Vegas-577b8afdd4dc8-tattoo.jpg')"></div>
+    </div>
+  </div>
+
 </div>

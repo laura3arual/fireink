@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {TattooistProfilePage} from "../tattooist-profile/tattooist-profile";
+
 
 /**
  * Generated class for the DetailTattooPage page.
@@ -18,6 +20,10 @@ export class DetailTattooPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad DetailTattooPage');
+  }
+
+  public openDetail() {
+    this.navCtrl.push(TattooistProfilePage);
   }
 
 }

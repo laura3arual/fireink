@@ -1,0 +1,50 @@
+<page-nav-bar></page-nav-bar>
+<div class="fk-tattoist">
+    <div class="fk-tattoist__profile">
+        <div class="fk-tattoist__profile__photo"
+        style="background-image: url('http://inkonsky.tattoo/photo/visor/2017/01/19/sanpedrosanchez-5880f7d6594a4-tattoo.jpg')"></div>
+        <div class="fk-tattoist__profile__info">
+            <h1 class="fk-tattoist__profile__info__name">Camilo Tavera</h1>
+            <h3 class="fk-tattoist__profile__info__city">Bogotá, Colombia</h3>
+            <div class="fk-tattoist__profile__info__works">
+                <span><strong>105 </strong>Tatuajes</span>
+                <span><strong>56</strong> Diseños</span>
+            </div>
+        </div>
+    </div>
+    <p class="fk-tattoist__description">
+        Sasha Tabuns Dotwork/linework tattoos 🌙 Saint-Petersburg, Russia. To make an appointment - write to the direct vk.com/tabuns
+    </p>
+
+    <div class="fk-tattoist__actions">
+        <button class="fk-tattoist__actions__schedule">
+            Agenda
+        </button>
+        <i class="flaticon-speech-bubble-1 fk-tattoist__actions__chat"></i>
+    </div>
+
+    <ul class="fk-tabs">
+        <li class="fk-tabs__tab" (click)="toggleTab('tattoos')" [ngClass]="{'fk-tabs__tab--active': activeTab === 'tattoos'}">Tatuajes</li>
+        <li class="fk-tabs__tab" (click)="toggleTab('designs')" [ngClass]="{'fk-tabs__tab--active': activeTab === 'designs'}">Diseños Disponibles</li>
+    </ul>
+
+    <div class="fk-list">
+  
+        <div class="fk-list__item">
+            <img (click)="openDetail()" src="http://inkonsky.tattoo/photo/visor/2017/05/15/Kel_tait-5918d87f1b7c1-tattoo.jpg" alt="">
+            <div class="fk-list__item__foot">
+                <i class="flaticon-heart"></i>
+                <span class="fk-list__item__foot__likes">125</span>
+            </div>
+        </div>
+
+        <div class="fk-list__item">
+            <img (click)="openDetail()" src="http://inkonsky.tattoo/photo/visor/2017/05/14/Vrstintaysangre-591817665e421-tattoo.jpg" alt="">
+            <div class="fk-list__item__foot">
+                <i class="flaticon-heart"></i>
+                <span class="fk-list__item__foot__likes">46</span>
+            </div>
+        </div>
+    </div>
+
+</div>

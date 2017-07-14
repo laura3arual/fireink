@@ -8,6 +8,7 @@
         display: flex;
         align-items: center;
         padding: .8em 0;
+        position: relative;
         &__photo {
             width: 48px;
             height: 48px;
@@ -29,5 +30,93 @@
                 display: block;
             }
         }
+        &__likes {
+            position: absolute;
+            top: 1em;
+            right: 1em;
+            &__num {
+                font-size: 16px;
+                font-weight: bold;
+                color: #515050;
+                margin-left: 0.3em;
+            }
+            &--liked {
+                color: #C43F3F;
+            }
+        }
     }
+    &__title {
+        font-size: 16px;
+        font-weight: 500;
+        color: #1C1C1C;
+    }
+    &__comments {
+        margin-top: 1em;
+        padding: 0 .5em;
+        display: flex;
+        align-items: center;
+        i {
+            &:before {
+                font-size: 28px;
+                margin-right: .5em;
+            }
+        }
+        &__txt {
+            color: #1C1C1C;
+            font-weight: normal;
+            font-size: 14px;
+        }
+    }
+}
+
+
+.fk-list {
+  padding: .5em;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  &__item {
+      width: 50%;
+      position: relative;
+      padding: 0 .25em;
+      height: 180px;
+      overflow: hidden;
+      margin: .5em 0;
+    img {
+      width: 100%;
+      border: 0;
+      object-fit: cover;
+      height: 100%;
+    }
+    &__foot {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba(255,255,255,.7);
+      padding: .5em 1em;
+      display: flex;
+      align-items: center;
+      &__likes {
+        font-size: 16px;
+        font-weight: bold;
+        color: #515050;
+        margin-left: 0.3em;
+      }
+      &__avatar {
+        width: 48px;
+        height: 48px;
+        position: absolute;
+        overflow: hidden;
+        border-radius: 50%;
+        right: 12px;
+        top: -24px;
+        border: 2px solid #FFF;
+        background-size: cover;
+      }
+    }
+    &--liked {
+      color: #C43F3F;
+    }
+  }
 }

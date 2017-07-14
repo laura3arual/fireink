@@ -6,6 +6,7 @@ import {MyApp} from "./app.component";
 import {TattooListPage} from "../pages/tattoo-list/tattoo-list";
 import {NavBarPage} from "../pages/nav-bar/nav-bar";
 import {DetailTattooPage} from "../pages/detail-tattoo/detail-tattoo";
+import {TattooistProfilePage} from "../pages/tattooist-profile/tattooist-profile";
 
 export const pages = [
   MyApp,
@@ -15,5 +16,6 @@ export const pages = [
   ListPage,
   TattooListPage,
   NavBarPage,
-  DetailTattooPage
+  DetailTattooPage,
+  TattooistProfilePage  
 ];
